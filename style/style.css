@@ -210,6 +210,19 @@ h6 {
     transform: rotateX(0deg);
   }
 }
+.header__container_services{
+  background-color: #fff;
+  color: #000;
+}
+.header__nav__element_services a{
+  color: #000;
+}
+.header__nav__element_language_services{
+  color: #000;
+}
+.header__container_services .dropdown{
+  color: #000;
+}
 /************main page styles*******************/
 /************main page styles*******************/
 /************main page styles*******************/
