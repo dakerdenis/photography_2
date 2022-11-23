@@ -247,7 +247,15 @@ h6 {
   align-items: center;
   bottom: 0;
 }
+.__footer__block__wrapper{
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+}
+.__footer__block__wrapper a {
+  color: #fff;
 
+}
 /*************burger menu*******************/
 .mobile__burger_block{
   display: none;
@@ -292,6 +300,13 @@ h6 {
   visibility: hidden;
 }
 /*************burger menu*******************/
+
+
+/************main page styles*******************/
+.content__main__img img{
+  width: initial;
+  height:  100%;
+}
 @media only screen and (max-width: 620px){
   
 }
