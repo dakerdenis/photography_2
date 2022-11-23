@@ -37,7 +37,7 @@
         <!----header navigation-->
         <div class="header__nav_wrapper">
           <div class="header__nav__element">
-            <a href="./gallery.html">Галлерея</a>
+            <a href="#element1">Галлерея</a>
           </div>
           <div class="header__nav__element">
             <a href="#element2">О нас</a>
@@ -77,7 +77,7 @@
               <div class="burger_menu__img">
                 <img src="./imgs/Logo.svg" alt="" />
               </div>
-              <a href="./gallery.html" class="burger-menu_link">Галлерея</a>
+              <a href="#element1" class="burger-menu_link burger-menu_link_active">Галлерея</a>
               <a href="#element2" class="burger-menu_link">О нас</a>
               <a href="#element3" class="burger-menu_link">Услуги</a>
               <a href="#element4" class="burger-menu_link">Контакты</a>
@@ -92,12 +92,24 @@
     </div>
     <div class="main__content">
         <div class="content__main__block">
-          <div class="content__main__img">
-            <img src="./imgs/1.jpg" alt="">
+          <div class="content__main__img content__main__slider">
+                    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
           </div>
-            <div class="content__main__desc">
 
-            </div>
             <div class="main__content__footer__block">
                 <div class="__footer__block__wrapper">
                   © 2022 Bagirov by <a href="#">DAKER</a>
@@ -109,8 +121,24 @@
     </div>
 
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script src="./js/script.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              direction: "vertical",
+              slidesPerView: 1,
+              spaceBetween: 30,
+              mousewheel: true,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+            });
+          </script>
 
           
 </body>
