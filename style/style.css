@@ -157,7 +157,7 @@ h6 {
   font-size: 1.1rem;
   cursor: pointer;
   font-weight: 600;
-  border: 1px solid rgba(39, 48, 73, 1);
+  color: #fff;
 }
 
 .fa-caret-down {
