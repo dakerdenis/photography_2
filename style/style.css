@@ -275,6 +275,60 @@ h6 {
   visibility: hidden;
 }
 /*************burger menu*******************/
+
+
+/************services styles*************************/
+/************services styles*************************/
+/************services styles*************************/
+.slider__content__container {
+  width: 100%;
+  height: 100%;  
+}
+.slider__content__wrapper {
+  width: 100%;
+  height: 100%;  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.slider__content__element {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+
+
+}
+.slider__content__element2{
+  background-color: red;
+  padding: 2.8em;
+  
+}
+.slider__content__element__img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+}
+.slider__content__element__img img{
+  height: 100%;
+  object-fit: contain;
+}
+.slider__content__element__container {
+}
+.__element__container__desc {
+}
+.__element__container__name {
+}
+.__element__container__line {
+}
+.__element__container__text {
+}
+.__element__container__link {
+}
 @media only screen and (max-width: 1690px) {
   .services__container_block {
     max-width: 1320px;
