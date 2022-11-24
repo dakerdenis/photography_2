@@ -398,12 +398,38 @@ h6 {
   width: initial;
   height:  100%;
 }
+/*************swiper content**********************/
+.slider__content__wrapper{
+  flex-direction: column;
+}
+.slider__content__element{
+  height: 50%;
+  width: 100%;
+}
+.slider__content__element__img img {
+  width: 100%;
+}
 }
 @media only screen and (max-width: 620px){
   
 }
 @media only screen and (max-width: 427px) {
- 
+ .__element__container__name {
+  font-size: 18px;
+ }
+ .__element__container__text {
+  margin-top: 0.5em;
+  margin-bottom: 1.4em;
+  line-height: 22px;
+ }
+ .__element__container__line{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+ }
+ .swiper-slide:nth-child(2)  .slider__content__wrapper{
+    flex-direction: column-reverse;
+ }
+
 }
 @media only screen and (max-width: 376px) {
   .header__container {
