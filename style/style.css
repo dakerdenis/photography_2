@@ -498,22 +498,36 @@ h6 {
   width: 100%;
 }
 .about__content__text__wrapper {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   padding: 20px 0px;
-  background-color: red;
+  background-color: #e3e3e3;
   display: flex;
   justify-content: space-between;
 }
 .about__text__name_desc {
+   width: 40%; 
 }
 .about__text__name {
+  color: #222222;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 .about__text__line {
+  margin: 1.5em 0;
+  height: 2px;
+  background-color: #222222;
+  width: 50px;
 }
 .about__text__desc {
+  color: #222222;
+  font-size: 14px;
+  line-height: 21px;
 }
 .about__content__maindesc {
+  width: 58%;
 }
 .about__content__images_wrapper {
 }
