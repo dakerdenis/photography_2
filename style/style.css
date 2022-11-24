@@ -103,7 +103,7 @@ h6 {
   position: fixed;
   top: 0;
   z-index: 5;
-
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .header__wrapper {
   width: 95%;
@@ -301,7 +301,7 @@ h6 {
 
 }
 .slider__content__element2{
-  background-color: red;
+  background-color: #fff;
   padding: 2.8em;
   
 }
@@ -315,19 +315,43 @@ h6 {
 }
 .slider__content__element__img img{
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .slider__content__element__container {
 }
 .__element__container__desc {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #ca9f5c;
+  margin-bottom: 2em;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 .__element__container__name {
+  color: #222222;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 .__element__container__line {
+  background-color: #222222;
+  width: 50px;
+  height: 3px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .__element__container__text {
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 2.5em;
 }
-.__element__container__link {
+.__element__container__link a{
+  border: 1px solid #959595;
+  color: #959595;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 7.8px 23px;
 }
 @media only screen and (max-width: 1690px) {
   .services__container_block {
