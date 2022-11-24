@@ -668,7 +668,11 @@ h6 {
 }
 }
 @media only screen and (max-width: 620px){
-  
+  .content__main__img img{
+    width: initial;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 @media only screen and (max-width: 427px) {
  .__element__container__name {
@@ -709,6 +713,12 @@ h6 {
 .__block_img_text-block p {
   font-size: 17px;
 }
+.content__main__img{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 }
 @media only screen and (max-width: 376px) {
   .header__container {
