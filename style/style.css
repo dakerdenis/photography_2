@@ -632,24 +632,50 @@ h6 {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  background-color: #0077b5;
+  margin-top: 2em;
+
 }
 .contact__social {
   width: 25%;
-  background-color: red;
+
+}
+.contact__social__name{
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
 }
 .contact__social__desc {
+  margin-top: 1.2em;
+  margin-bottom: 1em;
 }
-.contact__social__number {
+.contact__social__desc p {
+  font-size: 15px;
+  line-height: 21px;
+}
+.contact__social__number p{
+  font-size: 15px;
+  line-height: 28px;
 }
 .contact__social__networks {
+  margin-top: 1.4em;
 }
 .contact__social__networks_name {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+
 }
 .contact__social__networks__block{
   position: relative;
-  display: none;
-  visibility: hidden;
+  width: 100%;
+  min-height: 70px;
+
 }
 .contact__social__networks__block ul {
   display: flex;
@@ -664,19 +690,19 @@ h6 {
 }
 
 .contact__social__networks__block  ul li a {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   background-color: #222222;
   text-align: center;
-  line-height: 80px;
-  font-size: 35px;
-  margin: 0 10px;
+  line-height: 46px;
+  font-size: 21px;
+  margin: 0 9px;
   display: block;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
   border: 3px solid #222222;
-  z-index: 1;
+  z-index: 1
 }
 
 .contact__social__networks__block ul li a .icon {
@@ -724,7 +750,7 @@ h6 {
 }
 .contact__form {
   width: 70%;
-  background-color: green;
+
 }
 .contact__form__name-email {
 }
