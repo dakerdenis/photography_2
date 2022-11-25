@@ -801,6 +801,13 @@ h6 {
   font-size: 18px;
   letter-spacing: 1.5px;
 }
+.__block_img-text-container{
+  color: #fafafa;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 @media only screen and (max-width: 1690px) {
   .services__container_block {
     max-width: 1320px;
