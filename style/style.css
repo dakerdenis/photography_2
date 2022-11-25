@@ -723,7 +723,8 @@ h6 {
  .__element__container__text {
   margin-top: 0.5em;
   margin-bottom: 1.4em;
-  line-height: 22px;
+  line-height: 20px;
+  font-size: 13px;
  }
  .__element__container__line{
   margin-top: 0.5em;
