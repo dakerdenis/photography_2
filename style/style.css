@@ -574,7 +574,7 @@ h6 {
 }
 .about__content__images_block img {
   object-fit: cover;
-  height: 100%;
+  width: 100%;
 }
 .about__footer{
   height: 40px;
