@@ -91,7 +91,115 @@
       </div>
     </div>
     <div class="main__content">
+        <div class="page__page__container">
+
+        <div class="page__page__promo__content">
+            <div class="page__page__img__block">
+                <img src="" alt="">
+            </div>
+            <div class="page__page__text">
+                <p></p>
+            </div>
+        </div>
+        <div class="gallery__content__container">
+                    <div class="gallery__photos__wrapper">
+                        <a
+                          href="./imgs/content/1.jpg"
+                          data-fancybox="gallery"
+                          data-caption="Optional caption"
+                        >
+                          <img src="./imgs/content/1.jpg" alt="" srcset="" />
+                        </a>
+                        <a
+                          href="./imgs/content/2.jpg"
+                          data-fancybox="gallery"
+                          data-caption="Optional caption"
+                        >
+                          <img src="./imgs/content/2.jpg" alt="" srcset="" />
+                        </a>
+                        <a
+                          href="./imgs/content/3.jpg"
+                          data-fancybox="gallery"
+                          data-caption="Optional caption"
+                        >
+                          <img src="./imgs/content/3.jpg" alt="" srcset="" />
+                        </a>
+                        <a
+                          href="./imgs/content/4.jpg"
+                          data-fancybox="gallery"
+                          data-caption="Optional caption"
+                        >
+                          <img src="./imgs/content/4.jpg" alt="" srcset="" />
+                        </a>
+                        <a
+                          href="./imgs/content/5.jpg"
+                          data-fancybox="gallery"
+                          data-caption="Optional caption"
+                        >
+                          <img src="./imgs/content/5.jpg" alt="" srcset="" />
+                        </a>
         
+                        <a
+                          href="./imgs/content/6.jpg"
+                          data-fancybox="gallery"
+                          data-caption="Optional caption"
+                        >
+                          <img src="./imgs/content/6.jpg" alt="" srcset="" />
+                        </a>
+                        <a
+                          href="./imgs/content/7.jpg"
+                          data-fancybox="gallery"
+                          data-caption="Optional caption"
+                        >
+                          <img src="./imgs/content/7.jpg" alt="" srcset="" />
+                        </a>
+        
+                        <a
+                          href="./imgs/content/8.jpg"
+                          data-fancybox="gallery"
+                          data-caption="Optional caption"
+                        >
+                          <img src="./imgs/content/8.jpg" alt="" srcset="" />
+                        </a>
+                        <a
+                        href="./imgs/content/9.jpg"
+                        data-fancybox="gallery"
+                        data-caption="Optional caption"
+                      >
+                        <img src="./imgs/content/9.jpg" alt="" srcset="" />
+                      </a>
+                      <a
+                      href="./imgs/content/10.jpg"
+                      data-fancybox="gallery"
+                      data-caption="Optional caption"
+                    >
+                      <img src="./imgs/content/10.jpg" alt="" srcset="" />
+                    </a>
+                    <a
+                    href="./imgs/content/11.jpg"
+                    data-fancybox="gallery"
+                    data-caption="Optional caption"
+                  >
+                    <img src="./imgs/content/11.jpg" alt="" srcset="" />
+                  </a>
+                  <a
+                  href="./imgs/content/12.jpg"
+                  data-fancybox="gallery"
+                  data-caption="Optional caption"
+                >
+                  <img src="./imgs/content/12.jpg" alt="" srcset="" />
+                </a>
+                      </div>
+                </div>
+        
+        </div>
+        <?php
+
+            if(isset($_GET['foto'])){
+                echo $_GET['foto'];
+            }
+        
+        ?>
     </div>
     <script src="./js/script.js"></script>          
 </body>
