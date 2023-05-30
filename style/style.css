@@ -194,7 +194,7 @@ h6 {
   transition: background 0.3s ease;
 }
 .dropdown-menu span:hover {
-  background: #eee;
+
 }
 
 #openDropdown:checked + .dropdown-menu {
