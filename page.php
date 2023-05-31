@@ -1,6 +1,8 @@
 <?php
-    if(isset($_GET['foto'])){
 
+
+    if(isset($_GET['foto'])){
+        
     }
 
 ?>
@@ -113,7 +115,20 @@ href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     
                 <div class="about__name__block">
                     <div class="gallery__main__name">
-                        Галлерея
+                        <?php
+                            if(isset($_GET['foto'])){
+                                $foto = $_GET['foto'];
+                                
+                                switch($foto){
+                                    case "family":
+                                        echo "СЕМЕЙНАЯ ФОТОГРАФИЯ";
+                                        break;
+                                    case "fashion":
+                                        echo "Фешн-съемка ";
+                                        break;
+                                }
+                            }
+                        ?>
                     </div>
                 </div>
             </div>
