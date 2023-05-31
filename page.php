@@ -5,48 +5,86 @@
 
     if(isset($_GET['foto'])){
         $foto = $_GET['foto'];
-                                
-        switch($foto){
-            case "family":
-                $page_name = "СЕМЕЙНАЯ ФОТОГРАФИЯ";
-                $gallery_name = "СЕМЕЙНАЯ ФОТОГРАФИЯ";
-                break;
-            case "fashion":
-                $page_name =  "Фешн-съемка ";
-                $gallery_name =  "Фешн-съемка ";
-                break;
-            case "love":
-                $page_name = "LOVE STORY - ФОТОГРАФИЯ";
-                $gallery_name = "LOVE STORY - ФОТОГРАФИЯ";
-                break;
-            case "wedding":
-                $page_name = "Свадебная фотография";
-                $gallery_name = "Свадебная фотография";
-                break;
-            case "portrait":
-                $page_name = " Портретная фотография";
-                $gallery_name = " Портретная фотография";
-                break;
-            case "nature":
-                $page_name = " Съемка природы и ландшафты ";
-                $gallery_name = " Съемка природы и ландшафты ";
-                break;
-            case "food":
-                $page_name = " PRODUCTION PHOTOGRAPHY ";
-                $gallery_name = " PRODUCTION PHOTOGRAPHY ";
-                break;
-            case "graduation":
-                $page_name = " Фотосессия на выпускной  ";
-                $gallery_name = "Фотосессия на выпускной  ";
-                break;
-        }
-
-        
-        
-
-        
+        if($_GET['lang']=='ru'){
+            switch($foto){
+                case "family":
+                    $page_name = "СЕМЕЙНАЯ ФОТОГРАФИЯ";
+                    $gallery_name = "СЕМЕЙНАЯ ФОТОГРАФИЯ";
+                    break;
+                case "fashion":
+                    $page_name =  "Фешн-съемка ";
+                    $gallery_name =  "Фешн-съемка ";
+                    break;
+                case "love":
+                    $page_name = "LOVE STORY - ФОТОГРАФИЯ";
+                    $gallery_name = "LOVE STORY - ФОТОГРАФИЯ";
+                    break;
+                case "wedding":
+                    $page_name = "Свадебная фотография";
+                    $gallery_name = "Свадебная фотография";
+                    break;
+                case "portrait":
+                    $page_name = " Портретная фотография";
+                    $gallery_name = " Портретная фотография";
+                    break;
+                case "nature":
+                    $page_name = " Съемка природы и ландшафты ";
+                    $gallery_name = " Съемка природы и ландшафты ";
+                    break;
+                case "food":
+                    $page_name = " PRODUCTION PHOTOGRAPHY ";
+                    $gallery_name = " PRODUCTION PHOTOGRAPHY ";
+                    break;
+                case "graduation":
+                    $page_name = " Фотосессия на выпускной  ";
+                    $gallery_name = "Фотосессия на выпускной  ";
+                    break;
+                case "reportage":
+                    $page_name = " Репортажная фотосъемка  ";
+                    $gallery_name = "Репортажная фотосъемка   ";
+                    break;
+            }
+        } elseif($_GET['lang']=='az'){
+            switch($foto){
+                case "family":
+                    $page_name = "Ailəvi çəkiliş. ";
+                    $gallery_name = "Ailəvi çəkiliş. ";
+                    break;
+                case "fashion":
+                    $page_name =  "Fashion çəkiliş. ";
+                    $gallery_name =  "Fashion çəkiliş. ";
+                    break;
+                case "love":
+                    $page_name = "LOVE STORY - ФОТОГРАФИЯ";
+                    $gallery_name = "LOVE STORY - ФОТОГРАФИЯ";
+                    break;
+                case "wedding":
+                    $page_name = "Свадебная фотография";
+                    $gallery_name = "Свадебная фотография";
+                    break;
+                case "portrait":
+                    $page_name = " Портретная фотография";
+                    $gallery_name = " Портретная фотография";
+                    break;
+                case "nature":
+                    $page_name = " Съемка природы и ландшафты ";
+                    $gallery_name = " Съемка природы и ландшафты ";
+                    break;
+                case "food":
+                    $page_name = " Food foto.  ";
+                    $gallery_name = " Food foto.  ";
+                    break;
+                case "graduation":
+                    $page_name = " Məzuniyyət fotosessiyası.  ";
+                    $gallery_name = "Məzuniyyət fotosessiyası.  ";
+                    break;
+                case "reportage":
+                    $page_name = " Репортажная фотосъемка  ";
+                    $gallery_name = "Репортажная фотосъемка   ";
+                    break;
+            }
+        }   
     }
-
 ?>
 
 

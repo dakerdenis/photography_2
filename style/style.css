@@ -90,6 +90,16 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 /******header styles********************/
 /******header styles********************/
 /******header styles********************/
@@ -258,6 +268,9 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.content__main__block_main{
+  overflow: hidden;
 }
 .content__main__img{
   top: 0;
