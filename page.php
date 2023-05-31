@@ -27,10 +27,22 @@
                 $page_name = " Портретная фотография";
                 $gallery_name = " Портретная фотография";
                 break;
+            case "nature":
+                $page_name = " Съемка природы и ландшафты ";
+                $gallery_name = " Съемка природы и ландшафты ";
+                break;
+            case "food":
+                $page_name = " PRODUCTION PHOTOGRAPHY ";
+                $gallery_name = " PRODUCTION PHOTOGRAPHY ";
+                break;
+            case "graduation":
+                $page_name = " Фотосессия на выпускной  ";
+                $gallery_name = "Фотосессия на выпускной  ";
+                break;
         }
 
-
-       
+        
+        
 
         
     }
