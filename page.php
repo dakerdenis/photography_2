@@ -248,6 +248,20 @@ href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
                                                                     <?php
                                 }
                                 break;
+
+                                case "wedding":
+                                    for ($i = 1; $i < 22; $i++) {
+                                        ?>
+                                 <a
+                                   href="./imgs/wedding/<?php echo $i ?>.jpg"
+                                   data-fancybox="gallery"
+                                   data-caption="Optional caption"
+                                 >
+                                   <img src="./imgs/wedding/<?php echo $i ?>.jpg" alt="" srcset="" />
+                                 </a>
+                                         <?php
+                                    }
+                                    break;
                         }
                         ?>
 
