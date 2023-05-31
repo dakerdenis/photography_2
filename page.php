@@ -1,7 +1,37 @@
 <?php
+    $page_name;
+    $gallery_name;
 
 
     if(isset($_GET['foto'])){
+        $foto = $_GET['foto'];
+                                
+        switch($foto){
+            case "family":
+                $page_name = "СЕМЕЙНАЯ ФОТОГРАФИЯ";
+                $gallery_name = "СЕМЕЙНАЯ ФОТОГРАФИЯ";
+                break;
+            case "fashion":
+                $page_name =  "Фешн-съемка ";
+                $gallery_name =  "Фешн-съемка ";
+                break;
+            case "love":
+                $page_name = "LOVE STORY - ФОТОГРАФИЯ";
+                $gallery_name = "LOVE STORY - ФОТОГРАФИЯ";
+                break;
+            case "wedding":
+                $page_name = "Свадебная фотография";
+                $gallery_name = "Свадебная фотография";
+                break;
+            case "portrait":
+                $page_name = " Портретная фотография";
+                $gallery_name = " Портретная фотография";
+                break;
+        }
+
+
+       
+
         
     }
 
@@ -15,7 +45,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery</title>
+  <title><?php echo $page_name; ?></title>
 
   <!--ico--->
   <link rel="shortcut icon" href="/imgs/ico.png" type="image/x-icon" />
@@ -116,18 +146,7 @@ href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
                 <div class="about__name__block">
                     <div class="gallery__main__name">
                         <?php
-                            if(isset($_GET['foto'])){
-                                $foto = $_GET['foto'];
-                                
-                                switch($foto){
-                                    case "family":
-                                        echo "СЕМЕЙНАЯ ФОТОГРАФИЯ";
-                                        break;
-                                    case "fashion":
-                                        echo "Фешн-съемка ";
-                                        break;
-                                }
-                            }
+                           echo $page_name;
                         ?>
                     </div>
                 </div>
