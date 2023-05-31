@@ -605,6 +605,9 @@ h6 {
   margin: 0 auto;
 
 }
+.gallery__content__container_page{
+  margin-top: 20px;
+}
 .gallery__photos__wrapper {
   margin-top: 3em;
   display: flex;
