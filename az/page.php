@@ -169,14 +169,14 @@ href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
             </a>
             <nav class="burger-menu_nav">
               <div class="burger_menu__img">
-                <img src="./imgs/Logo.svg" alt="" />
+                <a href="./az/index.html">AZ</a>
               </div>
               <a href="./gallery.html" class="burger-menu_link">Галлерея</a>
               <a href="./about.html" class="burger-menu_link">Обо мне</a>
               <a href="./services.html" class="burger-menu_link">Услуги</a>
               <a href="./contact.html" class="burger-menu_link">Контакты</a>
               <div class="burger_menu__all_rights">
-                <p> © 2022 Bagirov by <a href="#">DAKER</a></p>
+                <p> © 2023 Bagirov by <a href="#">DAKER</a></p>
               </div>
             </nav>
             <div class="burger-menu_overlay"></div>
@@ -194,7 +194,7 @@ href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
                 </div>
     
                 <div class="about__name__block">
-                    <div class="gallery__main__name">
+                    <div class="gallery__main__name gallery__main__name_page">
                         <?php
                         echo $page_name;
                         ?>
@@ -330,7 +330,7 @@ href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
 
                     <div class="about__footer">
                         <div class="__footer__block__wrapper">
-                            © 2022 Bagirov by <a href="#">DAKER</a>
+                            © 2023 Bagirov by <a href="#">DAKER</a>
                           </div>
                     </div>
                 </div>

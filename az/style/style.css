@@ -344,18 +344,7 @@ body {
   padding: 2.8em;
   
 }
-.slider__content__element__img {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  overflow: hidden;
-}
-.slider__content__element__img img{
-  height: 100%;
-  object-fit: cover;
-}
+
 .slider__content__element__container {
 }
 .__element__container__desc {
@@ -833,6 +822,20 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
+
+.slider__content__element__img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+}
+.slider__content__element__img img{
+  height: 100%;
+  object-fit: cover;
+}
 @media only screen and (max-width: 1690px) {
   .services__container_block {
     max-width: 1320px;
@@ -914,11 +917,76 @@ body {
   height: 30vh;
   width: 45%;
 }
+.burger_menu__img a {
+  background-color: #1e1c1c;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.about__img__block img{
+  height: 100%;
+  width: initial;
+}
+.slider__content__element__img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+}
+.slider__content__element__img img{
+  height: 100%;
+  object-fit: cover;
+}
+.slider__content__wrapper {
+  margin-top: 50px;
+}
+.slider__content__wrapper2{
+  flex-direction: column-reverse;
+}
+.gallery__main__name_page{
+  font-size: 20px;
+}
+.contact__form__social__wrapper{
+  flex-direction: column;
+}
+.contact__social{
+  width: 100%;
+}
+.contact__form{
+  width: 100%;
+}
+.contac__form__text{
+  margin-top: 20px;
+}
+.contact__form__button{
+  text-align: center;
+  margin-top: 20px;
+  justify-content: center;
+}
 }
 @media only screen and (max-width: 620px){
   .content__main__img img{
     width: initial;
     height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: -150px;
+  }
+  .slider__content__element__img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+  }
+  .slider__content__element__img img{
+    position: initial;
+    width: 100%;
     object-fit: cover;
   }
 }
@@ -955,6 +1023,7 @@ body {
 }
 .__block_img-text-container{
   width: 90%;
+  font-size: 17px;
 }
 .__block_img-text_name{
   font-size: 25px;

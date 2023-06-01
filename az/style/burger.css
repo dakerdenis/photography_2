@@ -130,6 +130,10 @@ margin-bottom: 15px;
   bottom: 1%;
   width: 100%;
   text-align: center;
+  color: #1e1c1c;
+}
+.burger_menu__all_rights a {
+  color: #1e1c1c;
 }
 .burger_menu__all_rights p {
   color: rgba(39, 48, 73, 1);
