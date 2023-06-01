@@ -914,12 +914,26 @@ body {
   height: 30vh;
   width: 45%;
 }
+.burger_menu__img a {
+  background-color: #1e1c1c;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.about__img__block img{
+  height: 100%;
+  width: initial;
+}
 }
 @media only screen and (max-width: 620px){
   .content__main__img img{
     width: initial;
     height: 100%;
     object-fit: cover;
+    position: absolute;
+    left: -150px;
   }
 }
 @media only screen and (max-width: 427px) {
