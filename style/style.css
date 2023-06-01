@@ -947,6 +947,9 @@ body {
 .slider__content__wrapper2{
   flex-direction: column-reverse;
 }
+.gallery__main__name_page{
+  font-size: 20px;
+}
 }
 @media only screen and (max-width: 620px){
   .content__main__img img{
@@ -965,7 +968,6 @@ body {
     overflow: hidden;
   }
   .slider__content__element__img img{
-    height: initial;
     position: initial;
     width: 100%;
     object-fit: cover;

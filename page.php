@@ -194,7 +194,7 @@ href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
                 </div>
     
                 <div class="about__name__block">
-                    <div class="gallery__main__name">
+                    <div class="gallery__main__name gallery__main__name_page">
                         <?php
                         echo $page_name;
                         ?>
