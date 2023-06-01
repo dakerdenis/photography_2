@@ -155,8 +155,8 @@ href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
               <input type="checkbox" id="openDropdown" hidden />
 
               <div class="dropdown-menu">
-                <span>AZ</span>
-                <span>RU</span>
+              <a href="./az/page.php?foto=<?php echo $_GET['foto'] ?>&lang=ru">AZ</a>
+
               </div>
             </div>
           </div>
@@ -169,7 +169,7 @@ href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
             </a>
             <nav class="burger-menu_nav">
               <div class="burger_menu__img">
-                <a href="./az/index.html">AZ</a>
+                <a href="./az/page.php?foto=<?php echo $_GET['foto'] ?>&lang=ru">AZ</a>
               </div>
               <a href="./gallery.html" class="burger-menu_link">Галлерея</a>
               <a href="./about.html" class="burger-menu_link">Обо мне</a>

@@ -6,83 +6,46 @@ $gallery_name;
 if (isset($_GET['foto'])) {
     $foto = $_GET['foto'];
     if ($_GET['lang'] == 'ru') {
-        switch ($foto) {
-            case "family":
-                $page_name = "СЕМЕЙНАЯ ФОТОГРАФИЯ";
-                $gallery_name = "СЕМЕЙНАЯ ФОТОГРАФИЯ";
-                break;
-            case "fashion":
-                $page_name = "Фешн-съемка ";
-                $gallery_name = "Фешн-съемка ";
-                break;
-            case "love":
-                $page_name = "LOVE STORY - ФОТОГРАФИЯ";
-                $gallery_name = "LOVE STORY - ФОТОГРАФИЯ";
-                break;
-            case "wedding":
-                $page_name = "Свадебная фотография";
-                $gallery_name = "Свадебная фотография";
-                break;
-            case "portrait":
-                $page_name = " Портретная фотография";
-                $gallery_name = " Портретная фотография";
-                break;
-            case "nature":
-                $page_name = " Съемка природы и ландшафты ";
-                $gallery_name = " Съемка природы и ландшафты ";
-                break;
-            case "food":
-                $page_name = " PRODUCTION PHOTOGRAPHY ";
-                $gallery_name = " PRODUCTION PHOTOGRAPHY ";
-                break;
-            case "graduation":
-                $page_name = " Фотосессия на выпускной  ";
-                $gallery_name = "Фотосессия на выпускной  ";
-                break;
-            case "reportage":
-                $page_name = " Репортажная фотосъемка  ";
-                $gallery_name = "Репортажная фотосъемка   ";
-                break;
-        }
+      switch ($foto) {
+        case "family":
+            $page_name = "Ailəvi çəkiliş. ";
+            $gallery_name = "Ailəvi çəkiliş. ";
+            break;
+        case "fashion":
+            $page_name = "Fashion çəkiliş. ";
+            $gallery_name = "Fashion çəkiliş. ";
+            break;
+        case "love":
+            $page_name = "LOVE STORY - çəkiliş";
+            $gallery_name = "LOVE STORY - çəkiliş";
+            break;
+        case "wedding":
+            $page_name = "Toy çəkiliş";
+            $gallery_name = "Toy çəkiliş";
+            break;
+        case "portrait":
+            $page_name = "Portret fotoqrafiyası";
+            $gallery_name = " Portret fotoqrafiyası";
+            break;
+        case "nature":
+            $page_name = " təbiət və mənzərələrin çəkilişi  ";
+            $gallery_name = " təbiət və mənzərələrin çəkilişi  ";
+            break;
+        case "food":
+            $page_name = " Food foto.  ";
+            $gallery_name = " Food foto.  ";
+            break;
+        case "graduation":
+            $page_name = " Məzuniyyət fotosessiyası.  ";
+            $gallery_name = "Məzuniyyət fotosessiyası.  ";
+            break;
+        case "reportage":
+            $page_name = "Reportaj fotoqrafiyası  ";
+            $gallery_name = "Reportaj fotoqrafiyası   ";
+            break;
+    }
     } elseif ($_GET['lang'] == 'az') {
-        switch ($foto) {
-            case "family":
-                $page_name = "Ailəvi çəkiliş. ";
-                $gallery_name = "Ailəvi çəkiliş. ";
-                break;
-            case "fashion":
-                $page_name = "Fashion çəkiliş. ";
-                $gallery_name = "Fashion çəkiliş. ";
-                break;
-            case "love":
-                $page_name = "LOVE STORY - ФОТОГРАФИЯ";
-                $gallery_name = "LOVE STORY - ФОТОГРАФИЯ";
-                break;
-            case "wedding":
-                $page_name = "Свадебная фотография";
-                $gallery_name = "Свадебная фотография";
-                break;
-            case "portrait":
-                $page_name = " Портретная фотография";
-                $gallery_name = " Портретная фотография";
-                break;
-            case "nature":
-                $page_name = " Съемка природы и ландшафты ";
-                $gallery_name = " Съемка природы и ландшафты ";
-                break;
-            case "food":
-                $page_name = " Food foto.  ";
-                $gallery_name = " Food foto.  ";
-                break;
-            case "graduation":
-                $page_name = " Məzuniyyət fotosessiyası.  ";
-                $gallery_name = "Məzuniyyət fotosessiyası.  ";
-                break;
-            case "reportage":
-                $page_name = " Репортажная фотосъемка  ";
-                $gallery_name = "Репортажная фотосъемка   ";
-                break;
-        }
+
     }
 }
 ?>
@@ -132,17 +95,17 @@ href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
         <!----header navigation-->
         <div class="header__nav_wrapper">
           <div class="header__nav__element header__nav__element_about">
-            <a href="./gallery.html">Галлерея</a>
+            <a href="./gallery.html">Gallery</a>
           </div>
           <div class="header__nav__element header__nav__element_about">
-            <a href="./about.html">Обо мне</a>
+            <a href="./about.html">Haqqımda</a>
           </div>
 
           <div class="header__nav__element header__nav__element_about">
-            <a href="./services.html">Услуги</a>
+            <a href="./services.html">Xidmətlər</a>
           </div>
           <div class="header__nav__element header__nav__element_about">
-            <a href="./contact.html">Контакты</a>
+            <a href="./contact.html">Əlaqə</a>
           </div>
           <!---language---->
           <div class="header__nav__element header__nav__element_language header__nav__element_language_about">
@@ -155,8 +118,8 @@ href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
               <input type="checkbox" id="openDropdown" hidden />
 
               <div class="dropdown-menu">
-                <span>AZ</span>
-                <span>RU</span>
+
+                <a href="../page.php?foto=<?php echo $_GET['foto'] ?>&lang=ru">RU</a>
               </div>
             </div>
           </div>
@@ -169,12 +132,12 @@ href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
             </a>
             <nav class="burger-menu_nav">
               <div class="burger_menu__img">
-                <a href="./az/index.html">AZ</a>
+                <a href="../page.php?foto=<?php echo $_GET['foto'] ?>&lang=ru">RU</a>
               </div>
-              <a href="./gallery.html" class="burger-menu_link">Галлерея</a>
-              <a href="./about.html" class="burger-menu_link">Обо мне</a>
-              <a href="./services.html" class="burger-menu_link">Услуги</a>
-              <a href="./contact.html" class="burger-menu_link">Контакты</a>
+              <a href="./gallery.html" class="burger-menu_link">Gallery</a>
+              <a href="./about.html" class="burger-menu_link">Haqqımda</a>
+              <a href="./services.html" class="burger-menu_link">Xidmətlər</a>
+              <a href="./contact.html" class="burger-menu_link">Əlaqə</a>
               <div class="burger_menu__all_rights">
                 <p> © 2023 Bagirov by <a href="#">DAKER</a></p>
               </div>
