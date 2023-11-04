@@ -14,15 +14,6 @@ $dropdownMenu.addEventListener('click', (e) => {
 });
 
 
-
-
-
-
-
-
-
-
-
 $('.scrollto a').on('click', function() {
 
   let href = $(this).attr('href');
