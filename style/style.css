@@ -836,16 +836,4 @@ body {
   height: 100%;
   object-fit: cover;
 }
-@media only screen and (max-width: 1690px) {
-  .services__container_block {
-    max-width: 1320px;
-  }
-  .services__element__block {
-    width: 36%;
-  }
-  .services__element {
-    height: 52vh;
-  }
-
-}
 
