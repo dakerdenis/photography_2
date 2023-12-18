@@ -8,40 +8,40 @@ if (isset($_GET['foto'])) {
   if ($_GET['lang'] == 'az') {
     switch ($foto) {
       case "family":
-        $page_name = "Ailəvi çəkiliş. ";
-        $gallery_name = "Ailəvi çəkiliş. ";
+        $page_name = "Aİləvİ çəkİlİş. ";
+        $gallery_name = "Aİləvİ çəkİlİş. ";
         break;
       case "fashion":
-        $page_name = "Fashion çəkiliş. ";
-        $gallery_name = "Fashion çəkiliş. ";
+        $page_name = "Fashİon çəkİlİş  ";
+        $gallery_name = "Fashİon çəkİlİş ";
         break;
       case "love":
         $page_name = "LOVE STORY";
         $gallery_name = "LOVE STORY";
         break;
       case "wedding":
-        $page_name = "Toy çəkiliş";
-        $gallery_name = "Toy çəkiliş";
+        $page_name = "Toy çəkİlİşİ ";
+        $gallery_name = "Toy çəkİlİşİ ";
         break;
       case "portrait":
-        $page_name = "Portret fotoqrafiyası";
-        $gallery_name = " Portret fotoqrafiyası";
+        $page_name = "Portret";
+        $gallery_name = "Portret";
         break;
       case "nature":
-        $page_name = " təbiət və mənzərələrin çəkilişi  ";
-        $gallery_name = " təbiət və mənzərələrin çəkilişi  ";
+        $page_name = "Təbİət və mənzərələrİn çəkİlİşİ  ";
+        $gallery_name = "Təbİət və mənzərələrİn çəkİlİşİ  ";
         break;
       case "food":
-        $page_name = " Food foto.  ";
-        $gallery_name = " Food foto.  ";
+        $page_name = " Food foto  ";
+        $gallery_name = " Food foto  ";
         break;
       case "graduation":
-        $page_name = " Məzuniyyət fotosessiyası.  ";
-        $gallery_name = "Məzuniyyət fotosessiyası.  ";
+        $page_name = "Məzunİyyət çəkİlİşİ";
+        $gallery_name = "Məzunİyyət çəkİlİşİ";
         break;
       case "reportage":
-        $page_name = "Reportaj fotoqrafiyası  ";
-        $gallery_name = "Reportaj fotoqrafiyası   ";
+        $page_name = "Reportaj   ";
+        $gallery_name = "Reportaj    ";
         break;
     }
   } elseif ($_GET['lang'] == 'az') {
@@ -91,7 +91,7 @@ if (isset($_GET['foto'])) {
         <!----header navigation-->
         <div class="header__nav_wrapper">
           <div class="header__nav__element header__nav__element_about">
-            <a href="./gallery.html">Gallery</a>
+            <a href="./gallery.html">Qalereya</a>
           </div>
           <div class="header__nav__element header__nav__element_about">
             <a href="./about.html">Haqqımda</a>
@@ -130,7 +130,7 @@ if (isset($_GET['foto'])) {
               <div class="burger_menu__img">
                 <a href="../page.php?foto=<?php echo $_GET['foto'] ?>&lang=ru">RU</a>
               </div>
-              <a href="./gallery.html" class="burger-menu_link">Gallery</a>
+              <a href="./gallery.html" class="burger-menu_link">Qalereya</a>
               <a href="./about.html" class="burger-menu_link">Haqqımda</a>
               <a href="./services.html" class="burger-menu_link">Xidmətlər</a>
               <a href="./contact.html" class="burger-menu_link">Əlaqə</a>
@@ -149,7 +149,7 @@ if (isset($_GET['foto'])) {
       <div class="about__wrapper">
         <div class="about__img_name__block">
           <div class="about__img__block">
-            <img src="./imgs/1.jpg" alt="">
+            <img src="../imgs/6.jpg" alt="">
           </div>
 
           <div class="about__name__block">

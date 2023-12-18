@@ -111,10 +111,7 @@ if (isset($_GET['foto'])) {
   <link rel="stylesheet" href="./style/style.css" />
   <link rel="stylesheet" href="./style/burger.css" />
 
-  <link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
-/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 </head>
 
 <body>
@@ -155,7 +152,7 @@ href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
               <input type="checkbox" id="openDropdown" hidden />
 
               <div class="dropdown-menu">
-              <a href="./az/page.php?foto=<?php echo $_GET['foto'] ?>&lang=ru">AZ</a>
+                <a href="./az/page.php?foto=<?php echo $_GET['foto'] ?>&lang=az">AZ</a>
 
               </div>
             </div>
@@ -187,162 +184,130 @@ href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
 
 
     <div class="about__main__container">
-        <div class="about__wrapper">
-            <div class="about__img_name__block">
-                <div class="about__img__block">
-                    <img src="./imgs/1.jpg" alt="">
-                </div>
-    
-                <div class="about__name__block">
-                    <div class="gallery__main__name gallery__main__name_page">
-                        <?php
-                        echo $page_name;
-                        ?>
-                    </div>
-                </div>
+      <div class="about__wrapper">
+        <div class="about__img_name__block">
+          <div class="about__img__block">
+            <img src="./imgs/6.jpg" alt="">
+          </div>
+
+          <div class="about__name__block">
+            <div class="gallery__main__name gallery__main__name_page">
+              <?php
+              echo $page_name;
+              ?>
             </div>
-                <div class="gallery__content__container">
-                    <div class="gallery__photos__wrapper">
-                        <?php
-                        switch ($foto) {
-                          case "family":
-                            for ($i = 1; $i < 10; $i++) {
-                              ?>
-                                                                          <a
-                                                                            href="./imgs/family/<?php echo $i ?>.jpg"
-                                                                            data-fancybox="gallery"
-                                                                            data-caption="Optional caption"
-                                                                          >
-                                                                            <img src="./imgs/family/<?php echo $i ?>.jpg" alt="" srcset="" />
-                                                                          </a>
-                                                                                  <?php
-                            }
-                            break;
-
-                          case "fashion":
-                            for ($i = 1; $i < 12; $i++) {
-                              ?>
-                                                                          <a
-                                                                            href="./imgs/fashion/<?php echo $i ?>.jpg"
-                                                                            data-fancybox="gallery"
-                                                                            data-caption="Optional caption"
-                                                                          >
-                                                                            <img src="./imgs/fashion/<?php echo $i ?>.jpg" alt="" srcset="" />
-                                                                          </a>
-                                                                                  <?php
-                            }
-                            break;
-
-
-
-                          case "love":
-                            for ($i = 1; $i < 15; $i++) {
-                              ?>
-                                                                              <a
-                                                                                href="./imgs/love/<?php echo $i ?>.jpg"
-                                                                                data-fancybox="gallery"
-                                                                                data-caption="Optional caption"
-                                                                              >
-                                                                                <img src="./imgs/love/<?php echo $i ?>.jpg" alt="" srcset="" />
-                                                                              </a>
-                                                                                      <?php
-                            }
-                            break;
-
-                          case "wedding":
-                            for ($i = 1; $i < 22; $i++) {
-                              ?>
-                                                   <a
-                                                     href="./imgs/wedding/<?php echo $i ?>.jpg"
-                                                     data-fancybox="gallery"
-                                                     data-caption="Optional caption"
-                                                   >
-                                                     <img src="./imgs/wedding/<?php echo $i ?>.jpg" alt="" srcset="" />
-                                                   </a>
-                                                           <?php
-                            }
-                            break;
-
-                          case "nature":
-                            for ($i = 1; $i < 11; $i++) {
-                              ?>
-                                                       <a
-                                                         href="./imgs/nature/<?php echo $i ?>.jpg"
-                                                         data-fancybox="gallery"
-                                                         data-caption="Optional caption"
-                                                       >
-                                                         <img src="./imgs/nature/<?php echo $i ?>.jpg" alt="" srcset="" />
-                                                       </a>
-                                                               <?php
-                            }
-                            break;
-                          case "food":
-                            for ($i = 1; $i < 11; $i++) {
-                              ?>
-                                                           <a
-                                                             href="./imgs/food/<?php echo $i ?>.jpg"
-                                                             data-fancybox="gallery"
-                                                             data-caption="Optional caption"
-                                                           >
-                                                             <img src="./imgs/food/<?php echo $i ?>.jpg" alt="" srcset="" />
-                                                           </a>
-                                                                   <?php
-                            }
-                            break;
-
-
-
-
-                          case "graduation":
-                            for ($i = 1; $i < 9; $i++) {
-                              ?>
-                                                               <a
-                                                                 href="./imgs/graduation/<?php echo $i ?>.jpg"
-                                                                 data-fancybox="gallery"
-                                                                 data-caption="Optional caption"
-                                                               >
-                                                                 <img src="./imgs/graduation/<?php echo $i ?>.jpg" alt="" srcset="" />
-                                                               </a>
-                                                                       <?php
-                            }
-                            break;
-
-                          case "reportage":
-                            for ($i = 1; $i < 25; $i++) {
-                              ?>
-                                                                   <a
-                                                                     href="./imgs/reportage/<?php echo $i ?>.jpg"
-                                                                     data-fancybox="gallery"
-                                                                     data-caption="Optional caption"
-                                                                   >
-                                                                     <img src="./imgs/reportage/<?php echo $i ?>.jpg" alt="" srcset="" />
-                                                                   </a>
-                                                                           <?php
-                            }
-                            break;
-                        }
-                        ?>
-
-
-                      </div>
-                </div>
-                    <!--------->  
-
-                    <div class="about__footer">
-                        <div class="__footer__block__wrapper">
-                            © 2023 Bagirov by <a href="#">DAKER</a>
-                          </div>
-                    </div>
-                </div>
+          </div>
         </div>
+        <div class="gallery__content__container">
+          <div class="gallery__photos__wrapper">
+            <?php
+            switch ($foto) {
+              case "family":
+                for ($i = 1; $i < 10; $i++) {
+            ?>
+                  <a href="./imgs/family/<?php echo $i ?>.jpg" data-fancybox="gallery" data-caption="Optional caption">
+                    <img src="./imgs/family/<?php echo $i ?>.jpg" alt="" srcset="" />
+                  </a>
+                <?php
+                }
+                break;
+
+              case "fashion":
+                for ($i = 1; $i < 12; $i++) {
+                ?>
+                  <a href="./imgs/fashion/<?php echo $i ?>.jpg" data-fancybox="gallery" data-caption="Optional caption">
+                    <img src="./imgs/fashion/<?php echo $i ?>.jpg" alt="" srcset="" />
+                  </a>
+                <?php
+                }
+                break;
+
+
+
+              case "love":
+                for ($i = 1; $i < 15; $i++) {
+                ?>
+                  <a href="./imgs/love/<?php echo $i ?>.jpg" data-fancybox="gallery" data-caption="Optional caption">
+                    <img src="./imgs/love/<?php echo $i ?>.jpg" alt="" srcset="" />
+                  </a>
+                <?php
+                }
+                break;
+
+              case "wedding":
+                for ($i = 1; $i < 22; $i++) {
+                ?>
+                  <a href="./imgs/wedding/<?php echo $i ?>.jpg" data-fancybox="gallery" data-caption="Optional caption">
+                    <img src="./imgs/wedding/<?php echo $i ?>.jpg" alt="" srcset="" />
+                  </a>
+                <?php
+                }
+                break;
+
+              case "nature":
+                for ($i = 1; $i < 11; $i++) {
+                ?>
+                  <a href="./imgs/nature/<?php echo $i ?>.jpg" data-fancybox="gallery" data-caption="Optional caption">
+                    <img src="./imgs/nature/<?php echo $i ?>.jpg" alt="" srcset="" />
+                  </a>
+                <?php
+                }
+                break;
+              case "food":
+                for ($i = 1; $i < 11; $i++) {
+                ?>
+                  <a href="./imgs/food/<?php echo $i ?>.jpg" data-fancybox="gallery" data-caption="Optional caption">
+                    <img src="./imgs/food/<?php echo $i ?>.jpg" alt="" srcset="" />
+                  </a>
+                <?php
+                }
+                break;
+
+
+
+
+              case "graduation":
+                for ($i = 1; $i < 9; $i++) {
+                ?>
+                  <a href="./imgs/graduation/<?php echo $i ?>.jpg" data-fancybox="gallery" data-caption="Optional caption">
+                    <img src="./imgs/graduation/<?php echo $i ?>.jpg" alt="" srcset="" />
+                  </a>
+                <?php
+                }
+                break;
+
+              case "reportage":
+                for ($i = 1; $i < 25; $i++) {
+                ?>
+                  <a href="./imgs/reportage/<?php echo $i ?>.jpg" data-fancybox="gallery" data-caption="Optional caption">
+                    <img src="./imgs/reportage/<?php echo $i ?>.jpg" alt="" srcset="" />
+                  </a>
+            <?php
+                }
+                break;
+            }
+            ?>
+
+
+          </div>
+        </div>
+        <!--------->
+
+        <div class="about__footer">
+          <div class="__footer__block__wrapper">
+            © 2023 Bagirov by <a href="#">DAKER</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
 
-    <script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 
-          
+
 </body>
 
 </html>
@@ -358,5 +323,3 @@ href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
 
   for connecting https://daker.website/ 
   -------->
-
-
