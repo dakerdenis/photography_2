@@ -4,86 +4,86 @@ $gallery_name;
 
 
 if (isset($_GET['foto'])) {
-    $foto = $_GET['foto'];
-    if ($_GET['lang'] == 'ru') {
-        switch ($foto) {
-            case "family":
-                $page_name = "СЕМЕЙНАЯ ФОТОГРАФИЯ";
-                $gallery_name = "СЕМЕЙНАЯ ФОТОГРАФИЯ";
-                break;
-            case "fashion":
-                $page_name = "Фешн-съемка ";
-                $gallery_name = "Фешн-съемка ";
-                break;
-            case "love":
-                $page_name = "LOVE STORY - ФОТОГРАФИЯ";
-                $gallery_name = "LOVE STORY - ФОТОГРАФИЯ";
-                break;
-            case "wedding":
-                $page_name = "Свадебная фотография";
-                $gallery_name = "Свадебная фотография";
-                break;
-            case "portrait":
-                $page_name = " Портретная фотография";
-                $gallery_name = " Портретная фотография";
-                break;
-            case "nature":
-                $page_name = " Съемка природы и ландшафты ";
-                $gallery_name = " Съемка природы и ландшафты ";
-                break;
-            case "food":
-                $page_name = " PRODUCTION PHOTOGRAPHY ";
-                $gallery_name = " PRODUCTION PHOTOGRAPHY ";
-                break;
-            case "graduation":
-                $page_name = " Фотосессия на выпускной  ";
-                $gallery_name = "Фотосессия на выпускной  ";
-                break;
-            case "reportage":
-                $page_name = " Репортажная фотосъемка  ";
-                $gallery_name = "Репортажная фотосъемка   ";
-                break;
-        }
-    } elseif ($_GET['lang'] == 'az') {
-        switch ($foto) {
-            case "family":
-                $page_name = "Ailəvi çəkiliş. ";
-                $gallery_name = "Ailəvi çəkiliş. ";
-                break;
-            case "fashion":
-                $page_name = "Fashion çəkiliş. ";
-                $gallery_name = "Fashion çəkiliş. ";
-                break;
-            case "love":
-                $page_name = "LOVE STORY - ФОТОГРАФИЯ";
-                $gallery_name = "LOVE STORY - ФОТОГРАФИЯ";
-                break;
-            case "wedding":
-                $page_name = "Свадебная фотография";
-                $gallery_name = "Свадебная фотография";
-                break;
-            case "portrait":
-                $page_name = " Портретная фотография";
-                $gallery_name = " Портретная фотография";
-                break;
-            case "nature":
-                $page_name = " Съемка природы и ландшафты ";
-                $gallery_name = " Съемка природы и ландшафты ";
-                break;
-            case "food":
-                $page_name = " Food foto.  ";
-                $gallery_name = " Food foto.  ";
-                break;
-            case "graduation":
-                $page_name = " Məzuniyyət fotosessiyası.  ";
-                $gallery_name = "Məzuniyyət fotosessiyası.  ";
-                break;
-            case "reportage":
-                $page_name = " Репортажная фотосъемка  ";
-                $gallery_name = "Репортажная фотосъемка   ";
-                break;
-        }
+  $foto = $_GET['foto'];
+  if ($_GET['lang'] == 'ru') {
+    switch ($foto) {
+      case "family":
+        $page_name = "СЕМЕЙНАЯ ФОТОГРАФИЯ";
+        $gallery_name = "СЕМЕЙНАЯ ФОТОГРАФИЯ";
+        break;
+      case "fashion":
+        $page_name = "Фешн-съемка ";
+        $gallery_name = "Фешн-съемка ";
+        break;
+      case "love":
+        $page_name = "LOVE STORY";
+        $gallery_name = "LOVE STORY";
+        break;
+      case "wedding":
+        $page_name = "Свадебная фотография";
+        $gallery_name = "Свадебная фотография";
+        break;
+      case "portrait":
+        $page_name = " Портретная фотография";
+        $gallery_name = " Портретная фотография";
+        break;
+      case "nature":
+        $page_name = " Съемка природы и ландшафты ";
+        $gallery_name = " Съемка природы и ландшафты ";
+        break;
+      case "food":
+        $page_name = " PRODUCTION PHOTOGRAPHY ";
+        $gallery_name = " PRODUCTION PHOTOGRAPHY ";
+        break;
+      case "graduation":
+        $page_name = " Фотосессия на выпускной  ";
+        $gallery_name = "Фотосессия на выпускной  ";
+        break;
+      case "reportage":
+        $page_name = " Репортажная фотосъемка  ";
+        $gallery_name = "Репортажная фотосъемка   ";
+        break;
     }
+  } elseif ($_GET['lang'] == 'az') {
+    switch ($foto) {
+      case "family":
+        $page_name = "Ailəvi çəkiliş. ";
+        $gallery_name = "Ailəvi çəkiliş. ";
+        break;
+      case "fashion":
+        $page_name = "Fashion çəkiliş. ";
+        $gallery_name = "Fashion çəkiliş. ";
+        break;
+      case "love":
+        $page_name = "LOVE STORY - ФОТОГРАФИЯ";
+        $gallery_name = "LOVE STORY - ФОТОГРАФИЯ";
+        break;
+      case "wedding":
+        $page_name = "Свадебная фотография";
+        $gallery_name = "Свадебная фотография";
+        break;
+      case "portrait":
+        $page_name = " Портретная фотография";
+        $gallery_name = " Портретная фотография";
+        break;
+      case "nature":
+        $page_name = " Съемка природы и ландшафты ";
+        $gallery_name = " Съемка природы и ландшафты ";
+        break;
+      case "food":
+        $page_name = " Food foto.  ";
+        $gallery_name = " Food foto.  ";
+        break;
+      case "graduation":
+        $page_name = " Məzuniyyət fotosessiyası.  ";
+        $gallery_name = "Məzuniyyət fotosessiyası.  ";
+        break;
+      case "reportage":
+        $page_name = " Репортажная фотосъемка  ";
+        $gallery_name = "Репортажная фотосъемка   ";
+        break;
+    }
+  }
 }
 ?>
 
@@ -205,121 +205,121 @@ href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
                     <div class="gallery__photos__wrapper">
                         <?php
                         switch ($foto) {
-                            case "family":
-                                for ($i = 1; $i < 10; $i++) {
-                                    ?>
-                                                                    <a
-                                                                      href="./imgs/family/<?php echo $i ?>.jpg"
-                                                                      data-fancybox="gallery"
-                                                                      data-caption="Optional caption"
-                                                                    >
-                                                                      <img src="./imgs/family/<?php echo $i ?>.jpg" alt="" srcset="" />
-                                                                    </a>
-                                                                            <?php
-                                }
-                                break;
+                          case "family":
+                            for ($i = 1; $i < 10; $i++) {
+                              ?>
+                                                                          <a
+                                                                            href="./imgs/family/<?php echo $i ?>.jpg"
+                                                                            data-fancybox="gallery"
+                                                                            data-caption="Optional caption"
+                                                                          >
+                                                                            <img src="./imgs/family/<?php echo $i ?>.jpg" alt="" srcset="" />
+                                                                          </a>
+                                                                                  <?php
+                            }
+                            break;
 
-                            case "fashion":
-                                for ($i = 1; $i < 12; $i++) {
-                                    ?>
-                                                                    <a
-                                                                      href="./imgs/fashion/<?php echo $i ?>.jpg"
-                                                                      data-fancybox="gallery"
-                                                                      data-caption="Optional caption"
-                                                                    >
-                                                                      <img src="./imgs/fashion/<?php echo $i ?>.jpg" alt="" srcset="" />
-                                                                    </a>
-                                                                            <?php
-                                }
-                                break;
-
-
-
-                            case "love":
-                                for ($i = 1; $i < 15; $i++) {
-                                    ?>
-                                                                        <a
-                                                                          href="./imgs/love/<?php echo $i ?>.jpg"
-                                                                          data-fancybox="gallery"
-                                                                          data-caption="Optional caption"
-                                                                        >
-                                                                          <img src="./imgs/love/<?php echo $i ?>.jpg" alt="" srcset="" />
-                                                                        </a>
-                                                                                <?php
-                                }
-                                break;
-
-                            case "wedding":
-                                for ($i = 1; $i < 22; $i++) {
-                                    ?>
-                                             <a
-                                               href="./imgs/wedding/<?php echo $i ?>.jpg"
-                                               data-fancybox="gallery"
-                                               data-caption="Optional caption"
-                                             >
-                                               <img src="./imgs/wedding/<?php echo $i ?>.jpg" alt="" srcset="" />
-                                             </a>
-                                                     <?php
-                                }
-                                break;
-
-                            case "nature":
-                                for ($i = 1; $i < 11; $i++) {
-                                    ?>
-                                                 <a
-                                                   href="./imgs/nature/<?php echo $i ?>.jpg"
-                                                   data-fancybox="gallery"
-                                                   data-caption="Optional caption"
-                                                 >
-                                                   <img src="./imgs/nature/<?php echo $i ?>.jpg" alt="" srcset="" />
-                                                 </a>
-                                                         <?php
-                                }
-                                break;
-                                case "food":
-                                    for ($i = 1; $i < 11; $i++) {
-                                        ?>
-                                                     <a
-                                                       href="./imgs/food/<?php echo $i ?>.jpg"
-                                                       data-fancybox="gallery"
-                                                       data-caption="Optional caption"
-                                                     >
-                                                       <img src="./imgs/food/<?php echo $i ?>.jpg" alt="" srcset="" />
-                                                     </a>
-                                                             <?php
-                                    }
-                                    break;
+                          case "fashion":
+                            for ($i = 1; $i < 12; $i++) {
+                              ?>
+                                                                          <a
+                                                                            href="./imgs/fashion/<?php echo $i ?>.jpg"
+                                                                            data-fancybox="gallery"
+                                                                            data-caption="Optional caption"
+                                                                          >
+                                                                            <img src="./imgs/fashion/<?php echo $i ?>.jpg" alt="" srcset="" />
+                                                                          </a>
+                                                                                  <?php
+                            }
+                            break;
 
 
 
+                          case "love":
+                            for ($i = 1; $i < 15; $i++) {
+                              ?>
+                                                                              <a
+                                                                                href="./imgs/love/<?php echo $i ?>.jpg"
+                                                                                data-fancybox="gallery"
+                                                                                data-caption="Optional caption"
+                                                                              >
+                                                                                <img src="./imgs/love/<?php echo $i ?>.jpg" alt="" srcset="" />
+                                                                              </a>
+                                                                                      <?php
+                            }
+                            break;
 
-                                    case "graduation":
-                                        for ($i = 1; $i < 9; $i++) {
-                                            ?>
-                                                         <a
-                                                           href="./imgs/graduation/<?php echo $i ?>.jpg"
-                                                           data-fancybox="gallery"
-                                                           data-caption="Optional caption"
-                                                         >
-                                                           <img src="./imgs/graduation/<?php echo $i ?>.jpg" alt="" srcset="" />
-                                                         </a>
-                                                                 <?php
-                                        }
-                                        break;
+                          case "wedding":
+                            for ($i = 1; $i < 22; $i++) {
+                              ?>
+                                                   <a
+                                                     href="./imgs/wedding/<?php echo $i ?>.jpg"
+                                                     data-fancybox="gallery"
+                                                     data-caption="Optional caption"
+                                                   >
+                                                     <img src="./imgs/wedding/<?php echo $i ?>.jpg" alt="" srcset="" />
+                                                   </a>
+                                                           <?php
+                            }
+                            break;
 
-                                        case "reportage":
-                                            for ($i = 1; $i < 25; $i++) {
-                                                ?>
-                                                             <a
-                                                               href="./imgs/reportage/<?php echo $i ?>.jpg"
-                                                               data-fancybox="gallery"
-                                                               data-caption="Optional caption"
-                                                             >
-                                                               <img src="./imgs/reportage/<?php echo $i ?>.jpg" alt="" srcset="" />
-                                                             </a>
-                                                                     <?php
-                                            }
-                                            break;
+                          case "nature":
+                            for ($i = 1; $i < 11; $i++) {
+                              ?>
+                                                       <a
+                                                         href="./imgs/nature/<?php echo $i ?>.jpg"
+                                                         data-fancybox="gallery"
+                                                         data-caption="Optional caption"
+                                                       >
+                                                         <img src="./imgs/nature/<?php echo $i ?>.jpg" alt="" srcset="" />
+                                                       </a>
+                                                               <?php
+                            }
+                            break;
+                          case "food":
+                            for ($i = 1; $i < 11; $i++) {
+                              ?>
+                                                           <a
+                                                             href="./imgs/food/<?php echo $i ?>.jpg"
+                                                             data-fancybox="gallery"
+                                                             data-caption="Optional caption"
+                                                           >
+                                                             <img src="./imgs/food/<?php echo $i ?>.jpg" alt="" srcset="" />
+                                                           </a>
+                                                                   <?php
+                            }
+                            break;
+
+
+
+
+                          case "graduation":
+                            for ($i = 1; $i < 9; $i++) {
+                              ?>
+                                                               <a
+                                                                 href="./imgs/graduation/<?php echo $i ?>.jpg"
+                                                                 data-fancybox="gallery"
+                                                                 data-caption="Optional caption"
+                                                               >
+                                                                 <img src="./imgs/graduation/<?php echo $i ?>.jpg" alt="" srcset="" />
+                                                               </a>
+                                                                       <?php
+                            }
+                            break;
+
+                          case "reportage":
+                            for ($i = 1; $i < 25; $i++) {
+                              ?>
+                                                                   <a
+                                                                     href="./imgs/reportage/<?php echo $i ?>.jpg"
+                                                                     data-fancybox="gallery"
+                                                                     data-caption="Optional caption"
+                                                                   >
+                                                                     <img src="./imgs/reportage/<?php echo $i ?>.jpg" alt="" srcset="" />
+                                                                   </a>
+                                                                           <?php
+                            }
+                            break;
                         }
                         ?>
 
