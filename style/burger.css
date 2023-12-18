@@ -5,8 +5,8 @@
   top: 10px;
   right: 10px;
   z-index: 30;
-  width: 80px;
-  height: 80px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.5);
   -webkit-transition: 0.4s;
@@ -26,8 +26,8 @@
 .burger-menu_lines::after,
 .burger-menu_lines {
   position: absolute;
-  width: 50px;
-  height: 3px;
+  width: 32px;
+  height: 2px;
   background-color: rgba(39, 48, 73, 1);
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;

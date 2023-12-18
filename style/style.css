@@ -967,6 +967,12 @@ body {
   margin-top: 20px;
   justify-content: center;
 }
+.about__content__text__wrapper {
+  flex-direction: column;
+}
+.header__container {
+  height: 74px;
+}
 }
 @media only screen and (max-width: 620px){
   .content__main__img img{
@@ -988,6 +994,9 @@ body {
     position: initial;
     width: 100%;
     object-fit: cover;
+  }
+  .about__main__container {
+    margin-top: 74px;
   }
 }
 @media only screen and (max-width: 427px) {
@@ -1048,6 +1057,6 @@ body {
 }
 @media only screen and (max-width: 376px) {
   .header__container {
-    height: 89px;
+    height: 74px;
   }
 }
