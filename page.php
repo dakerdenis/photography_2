@@ -311,15 +311,10 @@ if (isset($_GET['foto'])) {
 </body>
 
 </html>
-<!----CREATED BY DENIS AKERSHTEYN
+<!----
+    ///////////////////////////////////
+  CREATED BY DENIS AKERSHTEYN
   ///////////////////////////////////
-  https://github.com/dakerdenis/fintrend
   ///////////////////////////////////
-
-
-
-
-
-
-  for connecting https://daker.website/ 
+  for connecting https://denisdaker.com// 
   -------->
